@@ -1,0 +1,32 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+div#navbarHeader a, footer a {
+    color: #fff;
+}
+
+div#navbarHeader a:hover, footer a:hover {
+    font-weight: bold;
+}
+
+#intro {
+    color: #fff;
+    font-weight: bold;
+    size: 2rem;
+}
+
+#storefront p.card-text {
+    color: #000;
+    font-family: 'Ubuntu', sans-serif
+}
+
+#storefront .card-footer {
+    background-color: #fff;
+}
+
+#footer p {
+
+}
