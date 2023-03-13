@@ -1,0 +1,91 @@
+body {
+    /*padding: 5% 15%;*/
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight:bold;
+    font-size: 3rem;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #b6d6d2;
+    padding: 3%;
+}
+
+#header, #experience, #education, #skills {
+    padding: 5% 15%;
+    width: 100%;
+}
+
+#header {
+    background-color: #b6d6d2;
+}
+
+#education {
+    background-color: #f4dcbb;
+}
+
+#education li.list-group-item{
+    background-color: #f4dcbb;
+}
+
+#header p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.section-header {
+    padding: 1% 0%;
+
+}
+
+.job-details {
+    padding: 2% 0%;
+}
+.job-details {
+    padding: 1% 0%;
+}
+
+.job-details h4 span {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.job-details a {
+    text-decoration: none;
+    color: #243c54;
+    font-weight: bold;
+}
+
+
+
+.job-details a:hover {
+    color: #b6d6d2;
+    font-weight: bold;
+}
+
+.list-group .fa-solid, .list-group .fa-brands {
+    color: #617d88;
+}
+
+#education .list-group .fa-solid {
+    color: #243c54;
+}
+
+footer a {
+    color: #000;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
+
