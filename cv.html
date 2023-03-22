@@ -16,7 +16,7 @@
 <body>
   <section id="header">
     <h1>Simon Cobb</h1>
-    <p>I started <a href="https://13thontheleft.xyz" target="_blank">my own company</a> building interactive audio experiences for Amazon Alexa in python and nodejs on Amazon Web Services in summer 2020.</p><p>Now I'm looking for a role that brings creativity and technology together.</p>
+    <p>I started <a href="https://13thontheleft.xyz" target="_blank">my own company</a> building interactive audio experiences for Amazon Alexa in python and nodejs on Amazon Web Services in summer 2020.</p><p>Now I'm looking for a developer role where I can use and build on my technical skills.</p>
 
   </section>
     <section id="experience">
@@ -170,6 +170,8 @@ document.addEventListener("DOMContentLoaded", function() {
         if (request.status >= 200 && request.status < 400) {
             // Success!
             var data = JSON.parse(request.responseText);
+            console.log('data = ' + JSON.stringify(data))
+            console.log('data keys = ' + Object.keys(data))
             //data['total']
             var toastElList = [].slice.call(document.querySelectorAll('.toast'))
             var toastList = toastElList.map(function (toastEl) {
