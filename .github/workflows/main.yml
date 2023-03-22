@@ -2,7 +2,9 @@
 # The workflow Creates static website using aws s3
 name: s3 sync
 on:
-  push
+  push:
+    branches:
+      - main
 env:
   BUCKET_NAME : '13th'
   AWS_REGION : 'eu-west-1'
@@ -25,7 +27,6 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
       # Upload a file to AWS s3
       - name:  sync all to s3 and invalidate cloudfront cache
-        working-directory: ${{ github.workspace }}
         run: |
           aws s3 cp ./cv.html s3://${{ env.BUCKET_NAME }}/ --recursive --acl public-read
           aws cloudfront create-invalidation --distribution-id E2MD18IJX7JWHR --paths '/*'
