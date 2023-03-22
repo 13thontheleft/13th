@@ -29,5 +29,5 @@ jobs:
       - name:  sync all to s3 and invalidate cloudfront cache
         working-directory: ./
         run: |
-          aws s3 cp ./* s3://${{ env.BUCKET_NAME }}/ 
+          aws s3 sync ./ s3://${{ env.BUCKET_NAME }}/ 
           aws cloudfront create-invalidation --distribution-id E2MD18IJX7JWHR --paths '/*'
