@@ -4,8 +4,8 @@ name: s3 sync
 on:
   push
 env:
-  BUCKET_NAME : "13th"
-  AWS_REGION : "eu-west-1"
+  BUCKET_NAME : '13th'
+  AWS_REGION : 'eu-west-1'
 # permission can be added at job level or workflow level
 permissions:
       id-token: write   # This is required for requesting the JWT
@@ -25,5 +25,5 @@ jobs:
       # Upload a file to AWS s3
       - name:  sync all to s3 and invalidate cloudfront cache
         run: |
-          aws s3 sync ./* s3://${{ env.BUCKET_NAME }}/
-          aws cloudfront create-invalidation --distribution-id E2MD18IJX7JWHR --paths "/*"
+          aws s3 sync './*' 's3://${{ env.BUCKET_NAME }}/'
+          aws cloudfront create-invalidation --distribution-id E2MD18IJX7JWHR --paths '/*'
