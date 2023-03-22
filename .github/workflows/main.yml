@@ -30,5 +30,5 @@ jobs:
         working-directory: ./
         run: |
           ls ${{github.workspace}}
-          aws s3 cp ./cv.html s3://${{ env.BUCKET_NAME }}/ --recursive --acl public-read
+          aws s3 cp ./cv.html s3://${{ env.BUCKET_NAME }}/ 
           aws cloudfront create-invalidation --distribution-id E2MD18IJX7JWHR --paths '/*'
